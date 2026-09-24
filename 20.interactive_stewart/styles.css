@@ -1,0 +1,27 @@
+/* Full-page background image styling with upper part focus */
+.full-page-image {
+    background-image: url("images/moonDrawing.jpeg"); /* Path to the image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: top; /* Show more of the upper part of the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    position: relative;
+}
+
+/* Overlay text box styling */
+.overlay-text {
+    position: absolute;
+    font-size: 20px;
+    background-color: #A4ADF2;
+    left: 174px;
+    bottom: 61px;
+    padding-top: 13px;
+    padding-left: 13px;
+    padding-bottom: 6px;
+    padding-right: 0px;
+    border-radius: 64px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	display: none;
+}
+
