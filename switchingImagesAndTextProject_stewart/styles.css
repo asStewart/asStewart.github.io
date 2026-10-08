@@ -1,0 +1,34 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+	height: 100%;
+  width: 100%;
+  overflow: hidden; /* no scrollbars for a clean full-screen look */
+	font-family: "Lovers Quarrel", cursive;
+}
+
+.viewer {
+position: relative;  /* important: anchors the absolute-positioned children */
+  height: 100vh;       /* full viewport height */
+  width: 100vw;        /* full viewport width */
+}
+
+	/* The image: covers the entire viewer */
+.viewer img {
+  position: absolute;
+  inset: 0;            /* shorthand for top/right/bottom/left: 0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fill without distortion; may crop */
+}
+	/* The caption: sits at the bottom, readable over the image */
+.viewer .description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 4rem;
+    padding: 1rem 1.5rem;
+    color: #BC70E5;
+    background-color: rgba(224,219,228,0.81); /* translucent bar for contrast */
+    border-radius: 15rem;
+}
